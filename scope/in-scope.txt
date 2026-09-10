@@ -1,0 +1,7 @@
+# Périmètre AUTORISÉ — programme : <nom>
+# Source : <url de la policy>   Dernière vérification : AAAA-MM-JJ
+#
+# Exemples (à supprimer) :
+# *.exemple.com
+# api.exemple.com
+# exemple.fr

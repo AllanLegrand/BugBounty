@@ -1,0 +1,44 @@
+# ─── Secrets — ne JAMAIS commiter ────────────────────────────────
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+**/credentials*
+**/cookies*
+**/tokens*
+config/secrets*
+
+# ─── Données sensibles collectées ────────────────────────────────
+# Une preuve = un extrait caviardé, pas un dump.
+**/dumps/
+**/raw/
+*.har
+*.sqlite
+*.db
+*.sql
+
+# ─── Sorties volumineuses d'outils ───────────────────────────────
+**/recon/**/*.json
+**/recon/**/*.xml
+**/recon/**/*.jsonl
+**/nuclei-output/
+**/screenshots/**/*.jpeg
+*.pcap
+*.zip
+*.tar.gz
+
+# ─── Système / éditeurs ──────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*~
+
+# ─── Environnements ──────────────────────────────────────────────
+venv/
+.venv/
+node_modules/
+__pycache__/

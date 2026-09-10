@@ -1,0 +1,7 @@
+# Périmètre INTERDIT — l'exclusion l'emporte toujours sur l'inclusion.
+# Source : <url de la policy>   Dernière vérification : AAAA-MM-JJ
+#
+# Exemples (à supprimer) :
+# blog.exemple.com
+# *.corp.exemple.com
+# status.exemple.com
