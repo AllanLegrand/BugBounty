@@ -1,41 +1,40 @@
 # Template Bug Bounty
 
 Dépôt de travail standardisé pour les programmes de bug bounty.
-Chaque étudiant **clone ce template**, l'utilise comme espace de travail pour ses cibles,
-sa recon, ses notes et ses rapports.
+Chaque étudiant M2 **forke ce dépôt**, l'utilise comme espace de travail personnel pour ses
+cibles, sa recon, ses notes et ses rapports — et le formateur suit le travail depuis chaque fork.
 
 > ⚠️ **Avant toute chose** : lis [docs/00-regles-engagement.md](docs/00-regles-engagement.md).
 > Tester une cible hors périmètre est illégal. Aucune exception.
 
 ---
 
-## 1. Démarrer
+## 1. Démarrer (étudiants M2)
 
-### Option A — via GitHub (recommandé)
-
-1. Clique sur **« Use this template » → « Create a new repository »**.
-2. Nomme ton dépôt `bugbounty-<ton-nom>` et mets-le en **privé**.
-3. Clone-le :
+Tu ne travailles **pas** directement sur ce dépôt : tu en fais un **fork** (ta copie
+personnelle sur ton compte GitHub), et c'est ce fork que le formateur consulte.
 
 ```bash
-git clone git@github.com:<toi>/bugbounty-<ton-nom>.git
-cd bugbounty-<ton-nom>
+# 1. Sur github.com/Karlblock/BugBounty → bouton « Fork »
+# 2. Cloner TON fork :
+git clone https://github.com/TON-COMPTE/BugBounty.git
+cd BugBounty
+# 3. Lier le modèle du formateur pour recevoir ses mises à jour :
+git remote add upstream https://github.com/Karlblock/BugBounty.git
+# 4. Configurer ton environnement :
+cp .env.example .env
 ```
 
-### Option B — clone direct
+Ensuite, tu rends ton travail simplement en poussant sur ton fork :
 
 ```bash
-git clone <url-du-template> mon-bugbounty
-cd mon-bugbounty
-rm -rf .git && git init      # repartir d'un historique vierge
-```
-
-### Initialisation
-
-```bash
-cp .env.example .env         # tes clés d'API (jamais commitées)
 ./scripts/init-target.sh exemple.com
+git add -A && git commit -m "recon exemple.com"
+git push origin main
 ```
+
+👉 **Guide complet (fork, sync, PR) : [docs/07-guide-etudiant.md](docs/07-guide-etudiant.md)**
+
 
 ---
 
@@ -95,3 +94,4 @@ Exemple : `2026-09-10_api.exemple.com_idor-facturation.md`
 - [04 — Outils](docs/04-outils.md)
 - [05 — Notation de la sévérité (CVSS)](docs/05-severite.md)
 - [06 — Bien écrire un rapport](docs/06-ecrire-un-rapport.md)
+- [07 — Guide étudiant : fork, clone, rendu](docs/07-guide-etudiant.md)
