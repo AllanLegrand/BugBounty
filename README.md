@@ -95,4 +95,3 @@ Exemple : `2026-09-10_api.exemple.com_idor-facturation.md`
 - [05 — Notation de la sévérité (CVSS)](docs/05-severite.md)
 - [06 — Bien écrire un rapport](docs/06-ecrire-un-rapport.md)
 - [07 — Guide étudiant : fork, clone, rendu](docs/07-guide-etudiant.md)
-# BugBounty
