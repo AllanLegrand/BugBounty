@@ -1,0 +1,12 @@
+scope,scope_type,asset_value
+https://edge.blablacar.(fr|de|co.uk|in|es|mx|be|hr|hu|it|nl|pl|com.br|pt|ro|ru|com|tr|com.ua)),api,LOW
+https://auth.blablacar.(fr|de|co.uk|in|es|mx|be|hr|hu|it|nl|pl|com.br|pt|ro|ru|com|tr|com.ua),api,LOW
+https://www.blablacar.(fr|de|co.uk|in|es|mx|be|hr|hu|it|nl|pl|com.br|pt|ro|ru|com|tr|com.ua),web-application,LOW
+https://m.blablacar.(fr|de|co.uk|in|es|mx|be|hr|hu|it|nl|pl|com.br|pt|ro|ru|com|tr|com.ua),web-application,LOW
+https://play.google.com/store/apps/details?id=com.comuto&hl=en,mobile-application-android,LOW
+https://itunes.apple.com/fr/app/blablacar-trusted-carpooling/id341329033?l=en&mt=8,mobile-application-ios,LOW
+https://api.blablalines.com,api,LOW
+https://daily.blablacar.fr,web-application,LOW
+https://blablacardaily.com,web-application,LOW
+https://play.google.com/store/apps/details?id=com.blablalines,mobile-application-android,LOW
+https://apps.apple.com/fr/app/blablalines-covoiturage/id1225543288,mobile-application-ios,LOW

@@ -15,7 +15,7 @@ if [[ $# -ne 1 || "$1" == "-h" || "$1" == "--help" ]]; then
   exit 2
 fi
 
-DOMAIN="${1,,}"
+DOMAIN="$(echo "$1" | tr '[:upper:]' '[:lower:]')"
 OUT="$ROOT/targets/$DOMAIN/recon"
 STAMP="$(date +%F)"
 mkdir -p "$OUT"

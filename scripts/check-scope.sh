@@ -35,7 +35,7 @@ normalize() {
   h="${h%%/*}"
   h="${h%%:*}"
   h="${h%.}"
-  printf '%s' "${h,,}"
+  printf '%s' "$(echo "$h" | tr '[:upper:]' '[:lower:]')"
 }
 
 # Charge un fichier de périmètre dans un tableau (commentaires et vides ignorés).
@@ -51,8 +51,15 @@ load_patterns() {
   done < "$file"
 }
 
-mapfile -t IN_PATTERNS  < <(load_patterns "$IN_FILE")
-mapfile -t OUT_PATTERNS < <(load_patterns "$OUT_FILE")
+IN_PATTERNS=()
+while IFS= read -r line; do
+  IN_PATTERNS+=("$line")
+done < <(load_patterns "$IN_FILE")
+
+OUT_PATTERNS=()
+while IFS= read -r line; do
+  OUT_PATTERNS+=("$line")
+done < <(load_patterns "$OUT_FILE")
 
 if [[ ${#IN_PATTERNS[@]} -eq 0 ]]; then
   echo "${YELLOW}⚠  scope/in-scope.txt est vide : remplis-le depuis la policy du programme avant de tester.${RESET}" >&2

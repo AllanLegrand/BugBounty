@@ -1,7 +1,10 @@
-# Périmètre AUTORISÉ — programme : <nom>
-# Source : <url de la policy>   Dernière vérification : AAAA-MM-JJ
+# Périmètre AUTORISÉ — programme : BlaBlaCar (YesWeHack)
+# Source : https://yeswehack.com/programs/bug-bounty-program-blablacar   Dernière vérification : 2026-09-28
 #
-# Exemples (à supprimer) :
-# *.exemple.com
-# api.exemple.com
-# exemple.fr
+edge.blablacar.*
+auth.blablacar.*
+www.blablacar.*
+m.blablacar.*
+api.blablalines.com
+daily.blablacar.fr
+blablacardaily.com

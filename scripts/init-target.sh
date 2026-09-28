@@ -16,7 +16,7 @@ if [[ $# -ne 1 || "$1" == "-h" || "$1" == "--help" ]]; then
 fi
 
 RAW="$1"
-HOST="${RAW#*://}"; HOST="${HOST%%/*}"; HOST="${HOST%%:*}"; HOST="${HOST,,}"
+HOST="${RAW#*://}"; HOST="${HOST%%/*}"; HOST="${HOST%%:*}"; HOST="$(echo "$HOST" | tr '[:upper:]' '[:lower:]')"
 DIR="$ROOT/targets/$HOST"
 TODAY="$(date +%F)"
 
