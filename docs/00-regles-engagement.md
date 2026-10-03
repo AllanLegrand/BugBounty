@@ -13,10 +13,10 @@ Un programme de bug bounty est l'autorisation qui te protège — **son périmè
 
 - [X] J'ai lu **la page du programme en entier** (policy, scope, rules).
 - [X] J'ai recopié le périmètre dans `scope/in-scope.txt` et `scope/out-of-scope.txt`.
-- [ ] J'ai noté les **techniques interdites** (souvent : DoS, brute force, social engineering, spam, scanners automatisés bruyants).
-- [ ] J'ai noté le **débit autorisé** (requêtes/seconde) et je m'y tiens.
-- [ ] J'ai créé mes **propres comptes de test** — je ne touche jamais au compte d'un tiers.
-- [ ] J'ai configuré l'**en-tête d'identification** exigé par le programme, s'il y en a un
+- [X] J'ai noté les **techniques interdites** (souvent : DoS, brute force, social engineering, spam, scanners automatisés bruyants).
+- [X] J'ai noté le **débit autorisé** (requêtes/seconde) et je m'y tiens.
+- [X] J'ai créé mes **propres comptes de test** — je ne touche jamais au compte d'un tiers.
+- [X] J'ai configuré l'**en-tête d'identification** exigé par le programme, s'il y en a un
       (ex. `X-Bug-Bounty: <mon-pseudo>` ou un User-Agent dédié).
 
 ## Interdits permanents, même « dans le scope »

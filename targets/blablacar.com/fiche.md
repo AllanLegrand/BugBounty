@@ -1,9 +1,9 @@
 # Fiche cible — blablacar.com
 
-- **Programme** : <nom> — <url de la policy>
-- **Dans le périmètre** : oui / non (vérifié le 2026-09-28)
-- **Débit autorisé** : <n req/s>
-- **En-tête d'identification exigé** : `<X-Bug-Bounty: ...>` ou aucun
+- **Programme** : BlaBlaCar — https://yeswehack.com/programs/bug-bounty-program-blablacar
+- **Dans le périmètre** : oui (vérifié le 2026-09-28)
+- **Débit autorisé** : Aucun fixé (interdiction des scanners bruyants et gros volume)
+- **En-tête d'identification exigé** : `User-Agent: BBC-YWH-Bugbounty-<ton-pseudo>`
 
 ## Technologies
 
