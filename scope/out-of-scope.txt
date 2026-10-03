@@ -1,6 +1,6 @@
 # Périmètre INTERDIT — l'exclusion l'emporte toujours sur l'inclusion.
 # Source : https://yeswehack.com/programs/bug-bounty-program-blablacar   Dernière vérification : 2026-09-28
-Any website that is not listed explicitly in the scope.
-However, though listed in the out-of-scope list, if you really feel that a bug will leave an impact on our platform, please come up with a convincing and working POC. If that convinces us to change our code, we will reward you with a bounty.
-Finally, fraud related reports are out-of-scope if they do not exploit a security vulnerability. Therefore, fraud activity enabled by bug or incomplete business rules enforcement are out-of-scope. However, a fraud activity enabled by a CSRF exploit for example is valid.
+# Any website that is not listed explicitly in the scope.
+# However, though listed in the out-of-scope list, if you really feel that a bug will leave an impact on our platform, please come up with a convincing and working POC. If that convinces us to change our code, we will reward you with a bounty.
+# Finally, fraud related reports are out-of-scope if they do not exploit a security vulnerability. Therefore, fraud activity enabled by bug or incomplete business rules enforcement are out-of-scope. However, a fraud activity enabled by a CSRF exploit for example is valid.
 

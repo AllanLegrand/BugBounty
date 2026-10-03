@@ -11,8 +11,8 @@ Un programme de bug bounty est l'autorisation qui te protège — **son périmè
 
 ## Avant de lancer la moindre commande
 
-- [ ] J'ai lu **la page du programme en entier** (policy, scope, rules).
-- [ ] J'ai recopié le périmètre dans `scope/in-scope.txt` et `scope/out-of-scope.txt`.
+- [X] J'ai lu **la page du programme en entier** (policy, scope, rules).
+- [X] J'ai recopié le périmètre dans `scope/in-scope.txt` et `scope/out-of-scope.txt`.
 - [ ] J'ai noté les **techniques interdites** (souvent : DoS, brute force, social engineering, spam, scanners automatisés bruyants).
 - [ ] J'ai noté le **débit autorisé** (requêtes/seconde) et je m'y tiens.
 - [ ] J'ai créé mes **propres comptes de test** — je ne touche jamais au compte d'un tiers.
