@@ -1,0 +1,14 @@
+auth.blablacar.com
+edge.blablacar.com
+m.blablacar.com
+m.blablacar.com.br
+m.blablacar.com.hr
+m.blablacar.com.mx
+m.blablacar.com.tr
+m.blablacar.com.ua
+www.blablacar.com
+www.blablacar.com.br
+www.blablacar.com.hr
+www.blablacar.com.mx
+www.blablacar.com.tr
+www.blablacar.com.ua

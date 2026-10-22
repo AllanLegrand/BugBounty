@@ -1,10 +1,7 @@
 # Périmètre AUTORISÉ — programme : BlaBlaCar (YesWeHack)
-# Source : https://yeswehack.com/programs/bug-bounty-program-blablacar   Dernière vérification : 2026-09-28
+# Source : https://yeswehack.com/programs/bug-bounty-program-blablacar   Dernière vérification : 2026-10-22 (policy du 2026-10-19)
 #
 edge.blablacar.*
 auth.blablacar.*
 www.blablacar.*
 m.blablacar.*
-api.blablalines.com
-daily.blablacar.fr
-blablacardaily.com

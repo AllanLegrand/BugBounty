@@ -1,7 +1,7 @@
 # Fiche cible — blablacar.com
 
 - **Programme** : BlaBlaCar — https://yeswehack.com/programs/bug-bounty-program-blablacar
-- **Dans le périmètre** : oui (vérifié le 2026-09-28)
+- **Dans le périmètre** : oui (vérifié le 2026-10-22 — policy mise à jour le 2026-10-19)
 - **Débit autorisé** : Aucun fixé (interdiction des scanners bruyants et gros volume)
 - **En-tête d'identification exigé** : `User-Agent: BBC-YWH-Bugbounty-<ton-pseudo>`
 
