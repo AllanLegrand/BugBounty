@@ -61,3 +61,22 @@ Une ligne par session. Sert de preuve de bonne foi en cas de litige, et de mémo
 
 **Prochaine étape**
 - Connexion avec le compte de test `Psyckopato` pour observer les cookies et tokens d'API post-authentification.
+
+## 2026-10-22 (Après-midi — 15:25 à 15:35)
+
+**Périmètre** : Cartographie du trafic sur la page de connexion (`/login`)
+
+**Fait**
+- Accès à `https://www.blablacar.fr/login` depuis le navigateur Burp.
+- Capture de la première requête API déclenchée en arrière-plan (`GET /notification/count/v4` vers `edge.blablacar.fr`).
+
+**Observations**
+- Découverte majeure d'un SDK OpenAPI : le frontend SPA envoie des en-têtes explicites (`X-Blablacar-Openapi-Codegen-Endpoint: GET /notification/count/v4`, `X-Blablacar-Openapi-Codegen-Version: 4.1962.0`) vers `edge.blablacar.fr`.
+- Traçage des requêtes avec `X-Correlation-Id` (UUIDv4) et renvoi de l'identifiant visiteur `X-Visitor-Id` (UUIDv4).
+- Confirmation de l'API Gateway sur `edge.blablacar.fr` avec un client typé SPA (`X-Client: SPA|1.0.0`).
+
+**Impasses** (ne pas refaire)
+- (aucune)
+
+**Prochaine étape**
+- Soumettre le formulaire de connexion avec le compte `Psyckopato` pour capturer la requête POST d'authentification et identifier la gestion de session (JWT vs cookies).
