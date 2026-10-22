@@ -9,9 +9,9 @@
 
 | Couche | Détail |
 |---|---|
-| Serveur | |
+| Serveur | Envoy proxy (Google Cloud Platform) |
 | Framework | |
-| CDN / WAF | |
+| CDN / WAF | Google Cloud CDN + DataDome (protection anti-bot) |
 | Auth | <session, JWT, OAuth, SAML> |
 | API | <REST, GraphQL, gRPC> |
 

@@ -2,9 +2,9 @@
 
 Une ligne par session. Sert de preuve de bonne foi en cas de litige, et de mémoire pour toi.
 
-## 2026-10-22 — 10:30 à 11:00
+## 2026-10-22 (Matin — 10:30 à 11:00)
 
-**Périmètre du jour** : Reconnaissance passive sur blablacar.com et blablacar.fr
+**Périmètre** : Reconnaissance passive sur blablacar.com et blablacar.fr
 
 **Fait**
 - Installation de subfinder et gau (`brew install subfinder gau`).
@@ -22,4 +22,24 @@ Une ligne par session. Sert de preuve de bonne foi en cas de litige, et de mémo
 
 **Prochaine étape**
 - Lancer httpx sur les hôtes in-scope pour identifier les codes HTTP, redirections et technos (avec User-Agent et rate-limit).
+
+## 2026-10-22 (Après-midi — 14:10 à 14:20)
+
+**Périmètre** : Sondage HTTP et fingerprinting des sous-domaines in-scope (recon active)
+
+**Fait**
+- Résolution du conflit de binaire httpx via `brew link --overwrite httpx`.
+- Exécution de `httpx` sur les 14 sous-domaines avec `-sc -title -tech-detect -rl 5` et le User-Agent obligatoire.
+
+**Observations**
+- Infrastructure identifiée : Envoy proxy, Google Cloud CDN, HTTP/3.
+- Détection d'un WAF anti-bot : DataDome bloque les requêtes directes en CLI (code 403 Forbidden sur `www`, `edge`, `auth`, `m`).
+- Redirections 301 observées sur les domaines régionaux (.hr, .mx).
+- Fiche cible (`targets/blablacar.com/fiche.md`) mise à jour avec les technos détectées.
+
+**Impasses** (ne pas refaire)
+- Inutile de continuer les requêtes automatisées en ligne de commande brute (DataDome bloque les outils non-navigateurs).
+
+**Prochaine étape**
+- Configurer Burp Suite avec le User-Agent exigé et tester directement depuis un vrai navigateur pour contourner l'anti-bot DataDome.
 
