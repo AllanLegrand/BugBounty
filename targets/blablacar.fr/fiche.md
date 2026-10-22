@@ -1,17 +1,17 @@
 # Fiche cible — blablacar.fr
 
-- **Programme** : <nom> — <url de la policy>
-- **Dans le périmètre** : oui / non (vérifié le 2026-10-22)
-- **Débit autorisé** : <n req/s>
-- **En-tête d'identification exigé** : `<X-Bug-Bounty: ...>` ou aucun
+- **Programme** : BlaBlaCar — https://yeswehack.com/programs/bug-bounty-program-blablacar
+- **Dans le périmètre** : oui (vérifié le 2026-10-22 — policy mise à jour le 2026-10-19)
+- **Débit autorisé** : 5 req/s (interdiction de gros volumes de trafic)
+- **En-tête d'identification exigé** : `User-Agent: BBC-YWH-Bugbounty-Psyckopato`
 
 ## Technologies
 
 | Couche | Détail |
 |---|---|
-| Serveur | |
+| Serveur | Envoy proxy (Google Cloud Platform) |
 | Framework | |
-| CDN / WAF | |
+| CDN / WAF | Google Cloud CDN + DataDome (protection anti-bot) |
 | Auth | <session, JWT, OAuth, SAML> |
 | API | <REST, GraphQL, gRPC> |
 
@@ -19,8 +19,8 @@
 
 | Rôle | Identifiant | Notes |
 |---|---|---|
-| Utilisateur A (attaquant) | | |
-| Utilisateur B (victime) | | |
+| Utilisateur A (attaquant) | Psyckopato | Baoudinov.bugbounty@proton.me |
+| Utilisateur B (victime) | Allan | allan123.bugbounty@proton.me |
 | Admin (si fourni) | | |
 
 ## Surface d'attaque
@@ -38,7 +38,7 @@
 
 ## Identifiants d'objets observés
 
-<Format des ids : incrémental, UUID, hash — déterminant pour les tests d'IDOR>
+- `vstr_id` (visiteur non connecté) : format **UUIDv4** (ex: `00892c2b-a801-4332-abef-08bb883a003d`) — aléatoire, non incrémental.
 
 ## Pistes à creuser
 
