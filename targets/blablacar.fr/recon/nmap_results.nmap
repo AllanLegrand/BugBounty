@@ -1,0 +1,91 @@
+# Nmap 7.992 scan initiated Sun Nov  1 19:25:45 2026 as: nmap -sV -sC -p- -iL -T3 -oA targets/blablacar.fr/recon/nmap_results
+Nmap scan report for 33.129.128.34.bc.googleusercontent.com (34.128.129.33)
+Host is up (0.013s latency).
+Not shown: 65533 filtered tcp ports (no-response)
+PORT    STATE SERVICE    VERSION
+80/tcp  open  http?
+|_skypev2-version: ERROR: Script execution failed (use -d to debug)
+| fingerprint-strings: 
+|   GetRequest: 
+|     HTTP/1.0 308 Permanent Redirect
+|     Cache-Control: private
+|     Location: https://34.128.129.33:443/
+|     Content-Length: 0
+|     Date: Sun, 01 Nov 2026 18:30:30 GMT
+|_    Content-Type: text/html; charset=UTF-8
+|_http-trane-info: ERROR: Script execution failed (use -d to debug)
+|_vmware-version: ERROR: Script execution failed (use -d to debug)
+|_rpcinfo: ERROR: Script execution failed (use -d to debug)
+|_weblogic-t3-info: ERROR: Script execution failed (use -d to debug)
+|_hnap-info: ERROR: Script execution failed (use -d to debug)
+|_https-redirect: ERROR: Script execution failed (use -d to debug)
+|_http-title: Site doesn't have a title (text/html; charset=UTF-8).
+|_rpc-grind: ERROR: Script execution failed (use -d to debug)
+|_http-server-header: ERROR: Script execution failed (use -d to debug)
+443/tcp open  ssl/https?
+|_http-trane-info: ERROR: Script execution failed (use -d to debug)
+|_vmware-version: ERROR: Script execution failed (use -d to debug)
+|_skypev2-version: ERROR: Script execution failed (use -d to debug)
+|_rpcinfo: ERROR: Script execution failed (use -d to debug)
+|_hnap-info: ERROR: Script execution failed (use -d to debug)
+|_rpc-grind: ERROR: Script execution failed (use -d to debug)
+|_http-title: 403
+|_http-server-header: ERROR: Script execution failed (use -d to debug)
+| ssl-cert: Subject: commonName=*.prod-1.blabla.tech
+| Subject Alternative Name: DNS:*.blablacar.be, DNS:*.blablacar.co.uk, DNS:*.blablacar.com, DNS:*.blablacar.com.br, DNS:*.blablacar.com.tr, DNS:*.blablacar.com.ua, DNS:*.blablacar.cz, DNS:*.blablacar.de, DNS:*.blablacar.es, DNS:*.blablacar.fr, DNS:*.blablacar.hr, DNS:*.blablacar.hu, DNS:*.blablacar.in, DNS:*.blablacar.it, DNS:*.blablacar.mx, DNS:*.blablacar.nl, DNS:*.blablacar.pl, DNS:*.blablacar.pt, DNS:*.blablacar.ro, DNS:*.blablacar.rs, DNS:*.blablacar.sk, DNS:*.blablacardaily.com, DNS:*.blablalines.com, DNS:*.blbl.cr, DNS:*.bus.blablacar.com, DNS:*.fr.blablacar.be, DNS:*.nl.blablacar.be, DNS:*.prod-1.blabla.tech, DNS:*.prod.blabla.tech, DNS:ablink.community.blablabus.com, DNS:ablink.community.blablacardaily.com, DNS:ablink.community.blablalines.com, DNS:api.insights.blablacardaily.com, DNS:blablacar.be, DNS:blablacar.co.uk, DNS:blablacar.com, DNS:blablacar.com.br, DNS:blablacar.com.tr, DNS:blablacar.com.ua, DNS:blablacar.cz, DNS:blablacar.de, DNS:blablacar.es, DNS:blablacar.fr, DNS:blablacar.hr, DNS:blablacar.hu, DNS:blablacar.in, DNS:blablacar.it, DNS:blablacar.mx, DNS:blablacar.nl, DNS:blablacar.pl, DNS:blablacar.pro, DNS:blablacar.pt, DNS:blablacar.ro, DNS:blablacar.rs, DNS:blablacar.sk, DNS:blbl.cr, DNS:link.community.blablacar.com
+| Not valid before: 2026-09-12T11:40:14
+|_Not valid after:  2026-12-11T11:40:13
+|_ssl-date: TLS randomness does not represent time
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port80-TCP:V=7.992%I=7%D=11/1%Time=6AE78546%P=arm-apple-darwin25.6.0%r(
+SF:GetRequest,C1,"HTTP/1\.0\x20308\x20Permanent\x20Redirect\r\nCache-Contr
+SF:ol:\x20private\r\nLocation:\x20https://34\.128\.129\.33:443/\r\nContent
+SF:-Length:\x200\r\nDate:\x20Sun,\x2001\x20Nov\x202026\x2018:30:30\x20GMT\
+SF:r\nContent-Type:\x20text/html;\x20charset=UTF-8\r\n\r\n");
+
+Nmap scan report for 125.86.36.34.bc.googleusercontent.com (34.36.86.125)
+Host is up (0.013s latency).
+Not shown: 65533 filtered tcp ports (no-response)
+PORT    STATE SERVICE    VERSION
+80/tcp  open  http?
+|_http-trane-info: ERROR: Script execution failed (use -d to debug)
+|_vmware-version: ERROR: Script execution failed (use -d to debug)
+|_skypev2-version: ERROR: Script execution failed (use -d to debug)
+|_rpcinfo: ERROR: Script execution failed (use -d to debug)
+|_weblogic-t3-info: ERROR: Script execution failed (use -d to debug)
+|_https-redirect: ERROR: Script execution failed (use -d to debug)
+| fingerprint-strings: 
+|   GetRequest: 
+|     HTTP/1.0 308 Permanent Redirect
+|     Cache-Control: private
+|     Location: https://34.36.86.125:443/
+|     Content-Length: 0
+|     Date: Sun, 01 Nov 2026 18:30:30 GMT
+|_    Content-Type: text/html; charset=UTF-8
+|_hnap-info: ERROR: Script execution failed (use -d to debug)
+|_rpc-grind: ERROR: Script execution failed (use -d to debug)
+|_http-server-header: ERROR: Script execution failed (use -d to debug)
+|_http-title: Site doesn't have a title (text/html; charset=UTF-8).
+443/tcp open  ssl/https?
+|_vmware-version: ERROR: Script execution failed (use -d to debug)
+|_http-trane-info: ERROR: Script execution failed (use -d to debug)
+|_skypev2-version: ERROR: Script execution failed (use -d to debug)
+|_rpcinfo: ERROR: Script execution failed (use -d to debug)
+|_hnap-info: ERROR: Script execution failed (use -d to debug)
+|_rpc-grind: ERROR: Script execution failed (use -d to debug)
+|_http-title: 403
+| ssl-cert: Subject: commonName=*.prod-1.blabla.tech
+| Subject Alternative Name: DNS:*.blablacar.be, DNS:*.blablacar.co.uk, DNS:*.blablacar.com, DNS:*.blablacar.com.br, DNS:*.blablacar.com.tr, DNS:*.blablacar.com.ua, DNS:*.blablacar.cz, DNS:*.blablacar.de, DNS:*.blablacar.es, DNS:*.blablacar.fr, DNS:*.blablacar.hr, DNS:*.blablacar.hu, DNS:*.blablacar.in, DNS:*.blablacar.it, DNS:*.blablacar.mx, DNS:*.blablacar.nl, DNS:*.blablacar.pl, DNS:*.blablacar.pt, DNS:*.blablacar.ro, DNS:*.blablacar.rs, DNS:*.blablacar.sk, DNS:*.blablacardaily.com, DNS:*.blablalines.com, DNS:*.blbl.cr, DNS:*.bus.blablacar.com, DNS:*.fr.blablacar.be, DNS:*.nl.blablacar.be, DNS:*.prod-1.blabla.tech, DNS:*.prod.blabla.tech, DNS:ablink.community.blablabus.com, DNS:ablink.community.blablacardaily.com, DNS:ablink.community.blablalines.com, DNS:api.insights.blablacardaily.com, DNS:blablacar.be, DNS:blablacar.co.uk, DNS:blablacar.com, DNS:blablacar.com.br, DNS:blablacar.com.tr, DNS:blablacar.com.ua, DNS:blablacar.cz, DNS:blablacar.de, DNS:blablacar.es, DNS:blablacar.fr, DNS:blablacar.hr, DNS:blablacar.hu, DNS:blablacar.in, DNS:blablacar.it, DNS:blablacar.mx, DNS:blablacar.nl, DNS:blablacar.pl, DNS:blablacar.pro, DNS:blablacar.pt, DNS:blablacar.ro, DNS:blablacar.rs, DNS:blablacar.sk, DNS:blbl.cr, DNS:link.community.blablacar.com
+| Not valid before: 2026-09-12T11:40:14
+|_Not valid after:  2026-12-11T11:40:13
+|_ssl-date: TLS randomness does not represent time
+|_http-server-header: ERROR: Script execution failed (use -d to debug)
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port80-TCP:V=7.992%I=7%D=11/1%Time=6AE78546%P=arm-apple-darwin25.6.0%r(
+SF:GetRequest,C0,"HTTP/1\.0\x20308\x20Permanent\x20Redirect\r\nCache-Contr
+SF:ol:\x20private\r\nLocation:\x20https://34\.36\.86\.125:443/\r\nContent-
+SF:Length:\x200\r\nDate:\x20Sun,\x2001\x20Nov\x202026\x2018:30:30\x20GMT\r
+SF:\nContent-Type:\x20text/html;\x20charset=UTF-8\r\n\r\n");
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Nov  1 19:30:33 2026 -- 2 IP addresses (2 hosts up) scanned in 287.95 seconds
