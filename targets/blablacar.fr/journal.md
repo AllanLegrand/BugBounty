@@ -80,3 +80,29 @@ Une ligne par session. Sert de preuve de bonne foi en cas de litige, et de mémo
 
 **Prochaine étape**
 - Soumettre le formulaire de connexion avec le compte `Psyckopato` pour capturer la requête POST d'authentification et identifier la gestion de session (JWT vs cookies).
+
+## 2026-11-09 — Connexion et analyse de la session dans Burp
+
+**Périmètre** : Observation de la connexion avec mon compte de test `Psyckopato`. Scope Burp limité à `www`, `m`, `auth` et `edge.blablacar.fr`, en HTTPS sur le port 443.
+
+**Fait**
+- J'ai relu les règles sur YesWeHack et vérifié les quatre hôtes du scope.
+- J'ai configuré Burp avec l'interception désactivée et l'historique limité au scope.
+- J'ai activé une règle pour ajouter `BBC-YWH-Bugbounty-Psyckopato` au User-Agent.
+- Je me suis connecté depuis `/login/email` dans le navigateur Burp, puis j'ai regardé les requêtes dans **Proxy → HTTP history**.
+
+**Observations**
+- À 14:57, la page `/login` et l'appel `/notification/count/v4` répondent **200** avant la connexion.
+- À 14:59, la connexion envoie un `POST /secure-token` vers `auth.blablacar.fr`. La réponse est **200**.
+- La requête contient notamment `grant_type: "password"`, `rememberMe` et `encryption_key_id`.
+- La réponse fournit un `access_token`, un `refresh_token` et un `user_id`. Les tokens ressemblent à des UUID, pas à des JWT.
+- Le champ `expires_in` indique **86 399 secondes**, soit environ 24 h. Je n'ai pas encore vérifié l'expiration réelle.
+- Les cookies `blablacar_token` et `user_id` sont créés à la connexion. Le premier contient les deux tokens.
+- Ensuite, `GET /private/session/v1` sur `edge.blablacar.fr` répond **200**. Cet appel utilise `Authorization: Bearer <masqué>`.
+- Les en-têtes `X-Client: SPA|1.0.0` et `X-Blablacar-Openapi-Codegen-Endpoint` sont présents. La version du SDK observée est `4.2140.0`.
+- Après connexion, j'arrive sur `/search-car-sharing`. Je vois aussi des appels à `/location/suggestions` et `/search/form/v2`.
+- Pour l'instant, je n'ai pas trouvé de faille.
+
+**Prochaine étape**
+- Vérifier le User-Agent envoyé, puis regarder les fonctions du profil et leurs appels API.
+- Préparer des tests de contrôle d'accès entre mes deux comptes.

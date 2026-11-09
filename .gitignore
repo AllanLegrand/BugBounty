@@ -10,6 +10,9 @@
 **/tokens*
 config/secrets*
 
+# Configuration Burp personnelle
+/burp-blablacar-config.json
+
 # ─── Données sensibles collectées ────────────────────────────────
 # Une preuve = un extrait caviardé, pas un dump.
 **/dumps/
