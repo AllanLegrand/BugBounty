@@ -1,0 +1,11 @@
+source_host,source_path,target_host,target_path,observation
+www.blablacar.fr,/bus,www.blablacar.fr,/rides,Menu utilisateur connecté observé le 12 novembre 2026
+www.blablacar.fr,/bus,www.blablacar.fr,/messages/list,Menu utilisateur connecté observé le 12 novembre 2026
+www.blablacar.fr,/bus,www.blablacar.fr,/dashboard/profile/menu,Menu utilisateur connecté observé le 12 novembre 2026
+www.blablacar.fr,/bus,www.blablacar.fr,/dashboard/account/money-available,Menu utilisateur connecté observé le 12 novembre 2026
+www.blablacar.fr,/bus,www.blablacar.fr,/dashboard/account/payments-history,Menu utilisateur connecté observé le 12 novembre 2026
+www.blablacar.fr,/dashboard/profile/menu,www.blablacar.fr,/dashboard/profile/account,Onglet Compte et changement URL observés le 12 novembre 2026
+www.blablacar.fr,/dashboard/profile/menu,www.blablacar.fr,/dashboard/profile/picture,Lien du profil de test observé le 12 novembre 2026
+www.blablacar.fr,/dashboard/profile/menu,www.blablacar.fr,/id-check,Lien du profil de test observé le 12 novembre 2026 sans suivre la vérification identité
+www.blablacar.fr,/dashboard/profile/menu,www.blablacar.fr,/phone/fill,Lien du profil de test observé le 12 novembre 2026 sans envoyer de SMS
+www.blablacar.fr,/dashboard/profile/menu,www.blablacar.fr,/dashboard/profile/vehicle/add,Lien du profil de test observé le 12 novembre 2026 sans ajouter de véhicule
